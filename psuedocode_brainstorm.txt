@@ -1,0 +1,22 @@
+psuedocode
+
+User Coin
+img
+guess options
+submit
+
+Computer Coin
+img
+
+Result
+
+Scoreboard
+user score
+computer score
+high score
+round number
+history
+
+--
+
+JS session storage
