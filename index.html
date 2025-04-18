@@ -17,8 +17,8 @@
 <div id="user">
   <h2>User</h2>
   <img src="" alt="">
-  <button id="run" onclick="flip('heads')">Heads</button>
-  <button id="run" onclick="flip('tails')">Tails</button>
+  <button id="run" onclick="resulting('heads')">Heads</button>
+  <button id="run" onclick="resulting('tails')">Tails</button>
 </div> <!--user-->
 
 <div id="comp">
@@ -29,16 +29,16 @@
 </div> <!--comp-->
 
 <div id="results">
-  <p id="roundR"></p>
-  <p id="userScore">0</p>
-  <p id="compScore">0</p>
-  <p id="roundNum">0</p>
+  <p>Round Result: <span id="roundR"></span></p>
+  <p>User Score: <span id="userScore">0</span></p>
+  <p>Computer Score: <span id="compScore">0</span></p>
+  <p>Round Number: <span id="roundNum">0</span></p>
   <div id="previous">
     <h3>Previous Rounds</h3>
-    <p></p>
-    <p></p>
-    <p></p>
+    <span id="prSpan"></span>
   </div> <!--previoius-->
 </div> <!--results-->
+
+<script src="script.js"></script>
 </body>
 </html>

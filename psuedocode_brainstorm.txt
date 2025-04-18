@@ -19,4 +19,22 @@ history
 
 --
 
-JS session storage
+JS
+
+session storage
+
+don't let user press button again or other button before script is done
+user guesses
+save
+string to num
+random int 1,2 for comp guess
+save
+random int 1,2 for coin toss
+save
+compare guess & actual
+update round number
+update scores
+display result (img & string)
+store result string in array
+if history has 3 strings, drop oldest
+if not round 1, update history with previous result string
