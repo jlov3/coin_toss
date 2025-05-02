@@ -1,0 +1,41 @@
+body {
+  padding: 10px;
+  background: antiquewhite;
+}
+
+h1 {color: #30569a;}
+h2 {color: #685464;}
+h3 {color: sienna;}
+
+#game {
+  width: fit-content;
+  padding: 10px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.fakeB {
+  width: fit-content;
+  line-height: 0;
+  padding: 2px 10px;
+  background: #efefef;
+  cursor: not-allowed;
+}
+
+button, .fakeB {
+  border: 2px solid saddlebrown;
+  border-radius: 4px;
+}
+button:first-of-type,
+.fakeB:first-of-type {
+  margin-bottom: 5px;
+}
+button:hover,
+button:focus,
+.fakeB:hover,
+.fakeB:focus {
+  background: #e5e5e5;
+}

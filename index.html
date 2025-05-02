@@ -12,32 +12,41 @@
 <h1>Coin Toss</h1>
 
 <div id="instructions">
+  <h2>Instructions</h2>
+  <p>Choose "Heads" or "Tails". The Computer will also choose a side. The coin will flip and a point will be awarded to whomever guessed correctly. If both do, then it will be a tie and there will be no points added. You may guess and flip for as long as you desire.</p>
 </div> <!--instructions-->
 
-<div id="user">
-  <h2>User</h2>
-  <img src="" alt="">
-  <button id="run" onclick="resulting('heads')">Heads</button>
-  <button id="run" onclick="resulting('tails')">Tails</button>
-</div> <!--user-->
+<div id="game">
+  <div id="user">
+    <h3>User</h3>
+    <img src="" alt="">
+    <br>
+    <button id="heads" onclick="resulting('heads')">Heads</button>
+    <br>
+    <button id="tails" onclick="resulting('tails')">Tails</button>
+  </div> <!--user-->
 
-<div id="comp">
-  <h2>Computer</h2>
-  <img src="" alt="">
-  <div class="fakeB"><p>Heads</p></div>
-  <div class="fakeB"><p>Tails</p></div>
-</div> <!--comp-->
+  <div id="comp">
+    <h3>Computer</h3>
+    <img src="" alt="">
+    <br>
+    <div class="fakeB"><p>Heads</p></div>
+    <div class="fakeB"><p>Tails</p></div>
+  </div> <!--comp-->
 
-<div id="results">
-  <p>Round Result: <span id="roundR"></span></p>
-  <p>User Score: <span id="userScore">0</span></p>
-  <p>Computer Score: <span id="compScore">0</span></p>
-  <p>Round Number: <span id="roundNum">0</span></p>
-  <div id="previous">
-    <h3>Previous Rounds</h3>
-    <span id="prSpan"></span>
-  </div> <!--previoius-->
-</div> <!--results-->
+  <div id="results">
+    <p>Round Result: <span id="roundR"></span></p>
+    <p>User Score: <span id="userScore">0</span></p>
+    <p>Computer Score: <span id="compScore">0</span></p>
+    <p>Round Number: <span id="roundNum">0</span></p>
+    <!--<div id="previous">
+      <h3>Previous Rounds</h3>
+      <span id="prSpan"></span>
+    </div>--> <!--previoius-->
+  </div> <!--results-->
+</div> <!--game-->
+
+<p>Coin SVGs sourced from <a href="https://www.randomlists.com/flip-a-coin" target="_blank">Random Lists, Flip a Coin</a></p>
 
 <script src="script.js"></script>
 </body>

@@ -1,21 +1,22 @@
 var userScore = 0; /*global*/
-var compScore = 0; /*global*/
+var compScore = 0;
 var roundNum = 0;
-var history = [];
+/*var history = [];*/
 
 function flipping(guess) {
-  window.alert("Started flipping(guess): " + guess);
+  let roundR = document.getElementById('roundR');
+  roundR.innerText = "";
   var user;
   if (guess == 'heads') {
     user = 0;
   } else {
     user = 1;
   }
-  window.alert("Guess to num: " + user);
 
-  /*https://www.w3schools.com/JS//js_random.asp*/
+  /*https://www.w3schools.com/JS//js_random.asp
+  computer's guess*/
   var comp = Math.floor(Math.random() * 2);
-  window.alert(comp);
+  /*the coin flip*/
   var actual = Math.floor(Math.random() * 2);
 
   var result;
@@ -32,33 +33,28 @@ function flipping(guess) {
   } else {
     actual = 'tails';
   }
-  window.alert(result + " " + actual);
   return [result, actual];
 }
 
 function resulting(guess) {
-  window.alert("Started resulting(guess)");
   let flip = flipping(guess);
-  window.alert("Pushed to flip[]");
   let result = flip[0];
   let actual = flip[1];
-  window.alert(flip);
   if (result != 'Tie') {
     var resultStr = result + ' with ' + actual + '.';
     if (result == 'User') {
       userScore += 1;
-      document.getElementById('userScore').innerHTML = userScore;
+      document.getElementById('userScore').innerText = userScore;
     } if (result == 'Computer') {
       compScore += 1;
-      document.getElementById('compScore').innerHTML = compScore;
+      document.getElementById('compScore').innerText = compScore;
     }
     var resultStr = result + ' wins with ' + actual + '.';
   } else {
     var resultStr = result + ' with ' + actual + '.';
   }
 
-  let roundR = document.getElementById('roundR');
-  roundR.innerHTML = resultStr;
+  roundR.innerText = resultStr;
   roundNum += 1;
-  document.getElementById('roundNum').innerHTML = roundNum;
+  document.getElementById('roundNum').innerText = roundNum;
 }
