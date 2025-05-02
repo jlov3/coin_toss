@@ -10,11 +10,32 @@ h3 {color: sienna;}
 #game {
   width: fit-content;
   padding: 10px;
+  display: grid;
+  grid-template-areas:
+  "coin user"
+  "coin comp"
+  "coin results";
+  margin: auto;
+  grid-gap: 20px;
+  grid-column-gap: 100px;
+}
+
+#coin {grid-area: coin; margin: auto;}
+#user {grid-area: user;}
+#comp {grid-area: comp;}
+#results {grid-area: results;}
+#coin, #user, #comp {
+  width: 25rem;
+}
+#user, #comp, #results {
+  background-color: floralwhite;
+  padding: 15px;
 }
 
 button {
   padding: 6px 10px;
   cursor: pointer;
+  background: #efefef;
 }
 
 .fakeB {

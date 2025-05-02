@@ -17,10 +17,10 @@
 </div> <!--instructions-->
 
 <div id="game">
+  <img id="coin" src="images/heads.svg" alt="Coin on Heads">
+
   <div id="user">
     <h3>User</h3>
-    <img src="" alt="">
-    <br>
     <button id="heads" onclick="resulting('heads')">Heads</button>
     <br>
     <button id="tails" onclick="resulting('tails')">Tails</button>
@@ -28,13 +28,12 @@
 
   <div id="comp">
     <h3>Computer</h3>
-    <img src="" alt="">
-    <br>
-    <div class="fakeB"><p>Heads</p></div>
-    <div class="fakeB"><p>Tails</p></div>
+    <div class="fakeB" id="fheads"><p>Heads</p></div>
+    <div class="fakeB" id="ftails"><p>Tails</p></div>
   </div> <!--comp-->
 
   <div id="results">
+    <h3>Results</h3>
     <p>Round Result: <span id="roundR"></span></p>
     <p>User Score: <span id="userScore">0</span></p>
     <p>Computer Score: <span id="compScore">0</span></p>
