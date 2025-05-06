@@ -1,3 +1,5 @@
+[Deployment](https://jlov3.github.io/coin_toss/)
+
 Project for ENGL 3130.
 
 Coin heads & tails SVGs sourced from https://www.randomlists.com/flip-a-coin.
